@@ -37,7 +37,7 @@
         font-size: 1.25rem;
     }
     .image {
-        width: 20.5rem;
+        width: 10.5rem;
         /* margin-top: 1rem; */
     }
     .overlay {
