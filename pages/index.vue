@@ -1,12 +1,18 @@
 <template>
- <div class="container">
-  <Hero />
- </div>
+  <div class="container">
+    <Hero />
+    <LargeCardDisplay />
+  </div>
 </template>
 
 <script>
+import {largeCardSections} from "@/assets/data.js";
 
 export default {
-
-}
+  data(){
+    return{
+      largeCardInfo : largeCardSections
+    }
+  }
+};
 </script>

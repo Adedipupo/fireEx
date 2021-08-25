@@ -26,19 +26,19 @@
     }
     .text-container {
         width: 50%;
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
     .header {
-        font-weight: 900;
-        font-size: 5rem;
+        font-weight: 700;
+        font-size: 3rem;
     }
     .snippet {
         color: grey;
         font-size: 1.25rem;
     }
     .image {
-        width: 27.5rem;
-        margin-top: 2rem;
+        width: 20.5rem;
+        /* margin-top: 1rem; */
     }
     .overlay {
         background: rgba(0, 0, 0, 0);
@@ -53,7 +53,7 @@
         background-color: rgb(231, 81, 43);
         color: white;
         width: 20rem;
-        font-weight: 700;
+        font-weight: 600;
         transition: 0.5s;
     }
     .button:hover {
