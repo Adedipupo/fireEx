@@ -1,23 +1,26 @@
 <template>
   <div class="container">
     <h4 class="header">
-      Top-rated Fire Extinguisher in Nigeria
+      {{cardsSection.title}}
     </h4>
     <p class="snippet">
-      User says these are the best fire extinguisher if your house is burning
-      down.
+     {{cardsSection.snippet}}
     </p>
-    <div class="cards-container"></div>
+    <div class="cards-container" v-for="card in cards" :key="card.id" :cardDetails="card">
+        
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props: ["cardsSection"]
+};
 </script>
 
 <style scoped>
 .container {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .header {
   font-weight: 700;
