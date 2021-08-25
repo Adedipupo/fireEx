@@ -1,11 +1,17 @@
 <template>
   <div class="card-container">
-
+    <img
+      class="image"
+      :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)"
+      alt=""
+    />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props: ["card"]
+};
 </script>
 
 <style scoped>
