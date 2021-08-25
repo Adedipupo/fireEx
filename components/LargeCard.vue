@@ -1,19 +1,17 @@
 <template>
-  <div class="card">
-      <img class="image" :src="cardDetails.image" alt="" />
-      <h3 class="header">
-          {{cardDetails.title}}
-      </h3>
-      <p class="snippets">
-          {{cardDetails.snippets}}
-      </p>
-  </div>
+    <div class="card">
+        <img class="image" :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)" alt="">
+        <h3 class="header">{{ card.title }}</h3>
+        <p class="snippet">
+            {{card.snippet }}
+        </p>
+    </div>
 </template>
 
 <script>
-export default {
-    props: ["cardDetails"]
-};
+    export default {
+        props: ['card'],
+    }
 </script>
 
 <style scoped>
