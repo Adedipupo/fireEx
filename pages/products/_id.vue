@@ -1,16 +1,15 @@
 <template>
     <div>
-        <h1>{{products}}} </h1>
+        <h1>{{product}} </h1>
     </div>
 </template>
 
 <script>
-import {mapState} from 'vuex'
     export default {
-        computed:{
-            ...mapState([
-                'products'
-            ])
+        computed: {
+            product(){
+                return this.$store.getters.getProductById(this.$route.params.id)
+            }
         }
     }
 </script>
