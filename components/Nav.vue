@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
-    <NuxtLink class="navbar-brand" to="/">Firengii</NuxtLink>
+    <a class="navbar-brand" to="/">Firengii</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -16,13 +16,13 @@
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <NuxtLink to="/products" class="nav-link"
-            >Products <span class="sr-only">(current)</span></NuxtLink
+          <a to="/products" class="nav-link"
+            >Products <span class="sr-only">(current)</span></a
           >
         </li>
         <li class="nav-item active">
-          <NuxtLink to="/my-items" class="nav-link"
-            >My Items <span class="sr-only">(current)</span></NuxtLink
+          <a to="/my-items" class="nav-link"
+            >My Items <span class="sr-only">(current)</span></a
           >
         </li>
       </ul>
@@ -36,7 +36,7 @@ export default {};
 
 <style scoped>
 .padding {
-  padding: 1.5rem;
+  padding: 1.0rem;
   background-color: black;
 }
 .nav-left {
