@@ -30,6 +30,11 @@
 .header {
   font-size: 1.15rem;
   margin-top: 0.4rem;
+  color: black;
+}
+.header:hover{
+  color: black;
+  text-decoration: none;
 }
 .snippet {
   color: grey;
