@@ -6,10 +6,10 @@
 
 <script>
     export default {
-        
+        layout: "no-vue"
     }
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 </style>
